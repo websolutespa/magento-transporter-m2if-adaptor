@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © Websolute spa. All rights reserved.
+  ~ See LICENSE and/or COPYING.txt for license details.
+  -->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="eav_attribute_option_value">
+        <index referenceId="EAV_ATTRIBUTE_OPTION_VALUE_VALUE" indexType="btree">
+            <column name="value"/>
+        </index>
+    </table>
+    <table name="catalog_product_entity_int">
+        <index referenceId="CATALOG_PRODUCT_ENTITY_INT_VALUE" indexType="btree">
+            <column name="value"/>
+        </index>
+    </table>
+    <table name="catalog_product_entity_varchar">
+        <index referenceId="CATALOG_PRODUCT_ENTITY_VARCHAR_VALUE" indexType="btree">
+            <column name="value"/>
+        </index>
+    </table>
+    <table name="catalog_product_entity_decimal">
+        <index referenceId="CATALOG_PRODUCT_ENTITY_DECIMAL_VALUE" indexType="btree">
+            <column name="value"/>
+        </index>
+    </table>
+    <table name="catalog_product_entity_datetime">
+        <index referenceId="CATALOG_PRODUCT_ENTITY_DATETIME_VALUE" indexType="btree">
+            <column name="value"/>
+        </index>
+    </table>
+    <table name="url_rewrite">
+        <index referenceId="URL_REWRITE_ENTITY_ID" indexType="btree">
+            <column name="entity_id"/>
+        </index>
+        <index referenceId="URL_REWRIRE_ENTITY_TYPE_ENTITY_ID" indexType="btree">
+            <column name="entity_id"/>
+            <column name="entity_type"/>
+        </index>
+    </table>
+    <table name="catalog_product_entity_media_gallery">
+        <index referenceId="CATALOG_PRODUCT_ENTITY_MEDIA_GALLERY_VALUE" indexType="btree">
+            <column name="value"/>
+        </index>
+    </table>
+</schema>

@@ -1,0 +1,35 @@
+{
+  "name": "websolutespa/magento-transporter-m2if-adaptor",
+  "description": "Websolute Transporter M2if Adaptor module",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "websolutespa/magento-transporter-base": "^1.0",
+    "websolutespa/magento-m2if-commands": "*"
+  },
+  "authors": [
+    {
+      "name": "Danilo Argentiero",
+      "email": "argentiero.danilo@gmail.com",
+      "homepage": "https://www.linkedin.com/in/daniloargentiero/",
+      "role": "Software Architect"
+    },
+    {
+      "name": "Riccardo Ugolini",
+      "email": "riccardo.ugolini@gmail.com",
+      "homepage": "https://www.linkedin.com/in/riccardougolini/",
+      "role": "Software Architect"
+    }
+  ],
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Websolute\\TransporterM2ifAdaptor\\": ""
+    }
+  }
+}
